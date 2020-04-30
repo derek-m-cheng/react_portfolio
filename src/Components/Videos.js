@@ -5,7 +5,10 @@ import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 class Videos extends Component {
     render() {
         return (
-            <div> 
+            <div>
+                 <div class="header-videos">
+		            <h1>My Videos</h1>
+	            </div>
                 <div className="header-caption">
                     <h3>Here's a selection of some interesting videos!</h3>
                 </div>
