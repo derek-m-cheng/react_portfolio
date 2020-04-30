@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import "../App.css"
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 
 class Music extends Component {
     render() {
         return (
             <div>
-                <div class="header">
+                <div className="header-music">
 		            <h1>My Music</h1>
 	            </div>
 
-                <div class="header-caption">
+                <div className="header-caption">
                     <h3>Here's a selection of my music taste!</h3>
                 </div>
-	
-                <button class="scrollTop"> 
-                    <i class="material-icons"><ArrowUpwardIcon/></i>
-                </button>
 
-                <div class="music-container">
+                <div>
+                    <ScrollUpButton/>
+                </div>
+
+                <div className="music-container">
                     <div>
                         <iframe src="https://open.spotify.com/embed/playlist/2JN43T4roMHnH2OGice8Y8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         <p>Relaxing playlist but has a lot of French songs on it for some reason.</p>

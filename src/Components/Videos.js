@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import "../App.css"
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 
 class Videos extends Component {
     render() {
         return (
             <div> 
-                <div class="header-caption">
+                <div className="header-caption">
                     <h3>Here's a selection of some interesting videos!</h3>
                 </div>
 
-                <button class="scrollTop"> 
-                    <i class="material-icons"><ArrowUpwardIcon/></i>
-                </button>
+                <div>
+                    <ScrollUpButton/>
+                </div>
 
-                <div class="videos-container">
+                <div className="videos-container">
                     <div>	
                         <iframe width="400" height="315" src="https://www.youtube.com/embed/V3Um7TJWsoI" allowfulscreen></iframe>
                     </div>
