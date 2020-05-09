@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { Component } from 'react';
 import "../App.css"
 import {TinyButton as ScrollUpButton} from "react-scroll-up-button";

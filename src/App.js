@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import "./App.css"
+import React, {Component} from 'react';
+import "./App.css";
 import TabList from './Components/TabList';
 import Body from './Components/Body';
 import SimpleReactLightbox from 'simple-react-lightbox';
@@ -36,6 +36,10 @@ class App extends Component {
       {
         id: 4,
         title: 'Videos'
+      },
+      {
+        id: 5,
+        title: 'Guest Book'
       }
     ]
     return (
@@ -57,6 +61,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;

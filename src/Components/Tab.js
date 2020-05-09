@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Tab extends Component {
     addStyling = () => {
+        // eslint-disable-next-line eqeqeq
         if(this.props.tab.id == this.props.activeTab) {
             return {backgroundColor:  '#2E5984', color: "white"}
         } else {

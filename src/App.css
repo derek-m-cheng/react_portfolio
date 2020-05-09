@@ -90,3 +90,46 @@
 .videos-container > div > iframe{
 	max-width: 100%;
 }
+
+.main-container{
+	display: flex;
+	overflow: hidden;
+}
+
+.guestbook-container{
+	flex: 1;
+	padding: 1rem;
+	width: fit-content;
+	
+}
+.submissions-container{
+	flex: 1;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.submissions{
+	border: 1px solid black;
+	flex: 1;
+	padding: 1rem;
+	width: 500px;
+}
+.submission-message{
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.submit-button{
+	padding-top: 10px;
+}
+
+.form-fields{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
