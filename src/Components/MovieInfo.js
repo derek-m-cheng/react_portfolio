@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {SRLWrapper} from 'simple-react-lightbox'
-import SimpleReactLightbox from "simple-react-lightbox";
+import Popup from 'reactjs-popup'
 
 const axios = require('axios');
-
+/*
 const options = {
     settings: {
         overlayColor: "rgb(25, 136, 124)",
@@ -21,6 +21,9 @@ const options = {
       },
     
 };
+*/
+
+
 class MovieInfo extends Component {
     constructor(){
         super();
@@ -54,23 +57,22 @@ class MovieInfo extends Component {
     }
     render() {
         return (
-            <SRLWrapper options = {options}>
-            <div>
-                        <div className="movie-poster">
-                            <img src={this.state.poster} alt={
-                                this.state.title + " " +
-                                "Directed By: " + this.state.director + " " +
-                                "Genre: " + this.state.genre + " " +
-                                "Plot: " + this.state.plot + " " +
-                                "Rating: " + this.state.rating + " " +
-                                "IMDB Reviewer Rating: " + this.state.imdbRating + " " +
-                                "Runtime: " + this.state.runtime                                
-                            }>
-                            </img>
+            <div className="movies">
+                <Popup modal trigger={<img src={this.state.poster}/>} lockScroll closeOnDocumentClick>
+                        <div>
+                            <img src={this.state.poster}></img>
+                            <p>{this.state.title}</p>
+                            <p>A {this.state.genre} film</p>
+                            <p>This film is directed by {this.state.director}</p>
+                            <p>{this.state.plot}</p>
+                            <p>Rated {this.state.rating}</p>
+                            <p>IMDB Rating {this.state.imdbRating}</p>
+                            <p>This film has a runtime of {this.state.runtime}</p>
+                            <button>Delete Movie</button>
                         </div>
-            </div>
-            </SRLWrapper>
-        );
+                </Popup>
+          </div>
+        )
     }
 }
 

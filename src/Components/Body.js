@@ -6,6 +6,8 @@ import Photos from './Photos';
 import Videos from './Videos';
 import GuestBook from './GuestBook';
 import Movies from './Movies';
+import AddMovie from './AddMovie';
+import AddList from './AddList';
 
 
 class Body extends Component {
@@ -21,8 +23,12 @@ class Body extends Component {
             return <Videos/>
         } else if (activeTab == 5) {
             return <GuestBook/>
-        } else {
+        } else if (activeTab == 6){
             return <Movies/>
+        } else if (activeTab == 7){
+            return <AddMovie/>
+        } else {
+            return <AddList/>
         }
     }
     render() {
