@@ -52,6 +52,10 @@ class App extends Component {
       {
         id: 8,
         title: 'New List'
+      },
+      {
+        id: 9,
+        title: 'Graph'
       }
     ]
     return (

@@ -8,6 +8,7 @@ import GuestBook from './GuestBook';
 import Movies from './Movies';
 import AddMovie from './AddMovie';
 import AddList from './AddList';
+import Graph from './Graph';
 
 
 class Body extends Component {
@@ -27,8 +28,10 @@ class Body extends Component {
             return <Movies/>
         } else if (activeTab == 7){
             return <AddMovie/>
-        } else {
+        } else if (activeTab ==8) {
             return <AddList/>
+        } else {
+            return <Graph/>
         }
     }
     render() {
